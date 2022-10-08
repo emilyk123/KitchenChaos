@@ -7,6 +7,7 @@ public class Bullet : MonoBehaviour
     public Vector2 dir;
     public float speed = 5f;
     private Rigidbody2D rb;
+    public GameObject enemy;
 
     // Start is called before the first frame update
     void Start()
@@ -19,5 +20,9 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        Object.Destroy(this.gameObject);
     }
 }

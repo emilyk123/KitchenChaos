@@ -12,6 +12,10 @@ public class Player : MonoBehaviour
 
     public GameObject bullet;
 
+    public int experience = 0;
+
+    public Enemy enemy;
+
     private void Awake()
     {
         rb = this.GetComponent<Rigidbody2D>();
@@ -36,4 +40,5 @@ public class Player : MonoBehaviour
         movement = movement.normalized;
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
+
 }
