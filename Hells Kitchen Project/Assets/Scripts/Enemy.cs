@@ -5,25 +5,32 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public GameObject bullet;
-    public LevelSystem level;
+    public Bullet bulletScript;
     private Rigidbody2D rb;
-    private int enemyEXP = 5;
+    private int enemyEXP = 1;
+    private int enemyHealth = 4;
+    private int totalDamage = 0;
 
     // Start is called before the first frame update
     void Start()
     {
+        totalDamage = 0;
         rb = this.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    private void OnTriggerEnter2D(Collider2D bullet) {
-        Object.Destroy(this.gameObject);
-        level.experience += enemyEXP;
-        Debug.Log(enemyEXP);
+    private void OnTriggerEnter2D(Collider2D other) {
+        if(other.tag == "Bullet") {
+            totalDamage += bulletScript.damage;
+            if(totalDamage == enemyHealth) {
+                LevelSystem.instance.AddXP(enemyEXP);
+                Destroy(gameObject);
+            }
+        }
     }
 }

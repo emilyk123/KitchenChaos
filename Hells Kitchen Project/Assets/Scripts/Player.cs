@@ -12,8 +12,6 @@ public class Player : MonoBehaviour
 
     public GameObject bullet;
 
-    public int experience = 0;
-
     public Enemy enemy;
 
     private void Awake()

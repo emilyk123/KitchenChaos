@@ -118,7 +118,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.21133333}
@@ -147,3 +147,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 8101388167745781921, guid: a438bbbcc26980e46ae30c18530b16a5, type: 3}
+  bulletScript: {fileID: 8101388167745781923, guid: a438bbbcc26980e46ae30c18530b16a5, type: 3}
+  player: {fileID: 7416540932600717423, guid: 27122d86aeaf044c084c74ef8462f7df, type: 3}

@@ -5,20 +5,26 @@ using TMPro;
 
 public class LevelSystem : MonoBehaviour
 {
-    public int experience;
-    private TextMeshProUGUI levelText;
+    public TextMeshProUGUI levelText;
+    public int currentXP, targetXP, level;
+
+    public static LevelSystem instance;
 
     private void Awake() {
-        levelText = GetComponent<TextMeshProUGUI>();
+        if(instance == null) {
+            instance = this;
+        } else {
+            Destroy(gameObject);
+        }
     }
 
-    private void Start() {
-        experience = 0;
+    public void AddXP(int xp) {
+        currentXP += xp;
+
+        if(currentXP >= targetXP) {
+            currentXP = targetXP - currentXP;
+            level++;
+            levelText.text = "Level: " + level.ToString();
+        }
     }
-
-    void Update() {
-        levelText.text = "Level: " + experience.ToString();
-    }
-
-
 }

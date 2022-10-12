@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1243649432386389896}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,6 +102,7 @@ MonoBehaviour:
   dir: {x: 0, y: 0}
   speed: 15
   enemy: {fileID: 3781929655291944941, guid: 01a413a0919184a91bc3ae2c7b970e26, type: 3}
+  damage: 2
 --- !u!50 &8101388167745781922
 Rigidbody2D:
   serializedVersion: 4
