@@ -296,7 +296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelText: {fileID: 844422675}
   currentXP: 0
-  targetXP: 3
+  targetXP: 20
   level: 0
 --- !u!1 &844422672
 GameObject:
@@ -333,7 +333,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 97, y: 31}
+  m_AnchoredPosition: {x: 110.5, y: 31}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &844422675

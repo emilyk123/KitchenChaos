@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
     public GameObject bullet;
     public Bullet bulletScript;
     private Rigidbody2D rb;
-    private int enemyEXP = 1;
+    private int enemyEXP = 10;
     private int enemyHealth = 4;
     private int totalDamage = 0;
 

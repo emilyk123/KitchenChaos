@@ -21,10 +21,14 @@ public class LevelSystem : MonoBehaviour
     public void AddXP(int xp) {
         currentXP += xp;
 
-        if(currentXP >= targetXP) {
-            currentXP = targetXP - currentXP;
+        while(currentXP >= targetXP) {
+            currentXP = currentXP - targetXP;
             level++;
+            targetXP += targetXP / 20;
+
             levelText.text = "Level: " + level.ToString();
         }
+        Debug.Log(currentXP);
+        Debug.Log(targetXP);
     }
 }
