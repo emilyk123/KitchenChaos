@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
     public GameObject bullet;
     public Bullet bulletScript;
+    private Player player;
     private Rigidbody2D rb;
     private int enemyEXP = 10;
     private int enemyHealth = 4;
@@ -16,6 +17,7 @@ public class Enemy : MonoBehaviour
     {
         totalDamage = 0;
         rb = this.GetComponent<Rigidbody2D>();
+        player = FindObjectOfType<Player>();
     }
 
     // Update is called once per frame
@@ -31,6 +33,9 @@ public class Enemy : MonoBehaviour
                 LevelSystem.instance.AddXP(enemyEXP);
                 Destroy(gameObject);
             }
+        }
+        if(other.tag == "Player") {
+            player.Health -= 5;
         }
     }
 }

@@ -28,7 +28,5 @@ public class LevelSystem : MonoBehaviour
 
             levelText.text = "Level: " + level.ToString();
         }
-        Debug.Log(currentXP);
-        Debug.Log(targetXP);
     }
 }

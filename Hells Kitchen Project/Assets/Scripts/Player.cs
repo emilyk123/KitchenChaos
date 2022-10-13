@@ -14,6 +14,8 @@ public class Player : MonoBehaviour
 
     public Enemy enemy;
 
+    public float Health = 100f;
+
     private void Awake()
     {
         rb = this.GetComponent<Rigidbody2D>();
