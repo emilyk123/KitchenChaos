@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
         {
             GameObject newBullet = GameObject.Instantiate(bullet, rb.position, Quaternion.identity);
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            newBullet.GetComponent<Bullet>().dir = (mousePos - rb.position).normalized;
+            newBullet.GetComponent<Bullet>().dir = ((mousePos - rb.position).normalized) * moveSpeed;
         }
     }
 

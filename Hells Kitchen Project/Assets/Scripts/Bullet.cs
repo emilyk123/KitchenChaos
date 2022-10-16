@@ -16,7 +16,7 @@ public class Bullet : MonoBehaviour
     {
         rb = this.GetComponent<Rigidbody2D>();
         player = FindObjectOfType<Player>();
-        rb.velocity = dir * speed;
+        rb.velocity = dir;
     }
 
     // Update is called once per frame
@@ -32,6 +32,7 @@ public class Bullet : MonoBehaviour
 
         if(other.tag == "Player") {
             player.Health -= 5;
+            Debug.Log("Hit");
         }
     }
 }
