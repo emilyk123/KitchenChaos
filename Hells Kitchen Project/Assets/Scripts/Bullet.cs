@@ -27,20 +27,17 @@ public class Bullet : MonoBehaviour
         //Counts down until its death, so bullets don't stay forever
         stopwatch += Time.fixedDeltaTime;
 
-<<<<<<< Updated upstream
-    private void OnTriggerEnter2D(Collider2D collider) {
-        if(collider.tag != "Bullet") {
-            Object.Destroy(this.gameObject);
-        }
-=======
         if (stopwatch >= deathTime)
         {
             Object.Destroy(this.gameObject);
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collider) {
-        if(collider.tag != "Bullet") Object.Destroy(this.gameObject);
->>>>>>> Stashed changes
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.tag != "Bullet")
+        {
+            Object.Destroy(this.gameObject);
+        }
     }
 }

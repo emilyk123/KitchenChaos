@@ -5,10 +5,6 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     public Transform target;
-
-<<<<<<< Updated upstream
-    void LateUpdate()
-=======
     public float rotationSpeed;
     private float rotateDir;
 
@@ -25,7 +21,6 @@ public class CameraFollow : MonoBehaviour
     }
 
     private void LateUpdate()
->>>>>>> Stashed changes
     {
         transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
     }

@@ -747,18 +747,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1852806289}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< Updated upstream:Hells Kitchen Project/Assets/Scenes/Scene.unity
   m_Script: {fileID: 11500000, guid: a7b0e8309bca2874f83f9a504830809d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1790609438}
-=======
-  m_Script: {fileID: 11500000, guid: e737235568c4aad41a39c7585aa38aa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1790609438}
-  rotationSpeed: 50
->>>>>>> Stashed changes:Hells Kitchen Project/Assets/Scene.unity
 --- !u!1 &1943793659
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,10 +932,6 @@ PrefabInstance:
     - target: {fileID: 5751259736102599778, guid: f1e298ba4b1604272966d923b54390fc, type: 3}
       propertyPath: moveSpeed
       value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5751259736102599781, guid: f1e298ba4b1604272966d923b54390fc, type: 3}
-      propertyPath: m_SpriteSortPoint
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5751259736102599782, guid: f1e298ba4b1604272966d923b54390fc, type: 3}
       propertyPath: m_RootOrder

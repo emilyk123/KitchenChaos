@@ -13,10 +13,7 @@ GameObject:
   - component: {fileID: 5751259736102599780}
   - component: {fileID: 5751259736102599779}
   - component: {fileID: 5751259736102599778}
-<<<<<<< Updated upstream:Hells Kitchen Project/Assets/Prefabs/Player.prefab
   - component: {fileID: 8947140234260805287}
-=======
->>>>>>> Stashed changes:Hells Kitchen Project/Assets/Player.prefab
   m_Layer: 6
   m_Name: Player
   m_TagString: Player

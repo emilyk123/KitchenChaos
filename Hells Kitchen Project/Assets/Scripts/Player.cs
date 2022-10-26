@@ -39,7 +39,6 @@ public class Player : MonoBehaviour
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             projectile.GetComponent<Bullet>().dir = ((mousePos - rb.position).normalized) * moveSpeed;
             projectile.layer = gameObject.layer;
-<<<<<<< Updated upstream
 
             anim.SetBool("Shooting", true);
             anim.SetFloat("ShootX", (mousePos - rb.position).x);
@@ -48,8 +47,6 @@ public class Player : MonoBehaviour
         else
         {
             anim.SetBool("Shooting", false);
-=======
->>>>>>> Stashed changes
         }
     }
 
@@ -59,16 +56,8 @@ public class Player : MonoBehaviour
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 
-<<<<<<< Updated upstream
     private void OnTriggerEnter2D(Collider2D other)
     {
         Health -= 5;
     }
 }
-=======
-    private void OnTriggerEnter2D(Collider2D collider)
-    {
-        Health -= 5;
-    }
-}
->>>>>>> Stashed changes
