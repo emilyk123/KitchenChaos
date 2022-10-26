@@ -6,6 +6,8 @@ public class Player : MonoBehaviour
 {
     private Rigidbody2D rb;
 
+    private Animator anim;
+
     public float moveSpeed = 5f;
 
     private Vector2 movement;
@@ -19,6 +21,7 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         rb = this.GetComponent<Rigidbody2D>();
+        anim = this.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -27,11 +30,26 @@ public class Player : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
+        anim.SetFloat("MoveX", movement.x);
+        anim.SetFloat("MoveY", movement.y);
+
         if (Input.GetButtonDown("Fire1"))
         {
-            GameObject newBullet = GameObject.Instantiate(bullet, rb.position, Quaternion.identity);
+            GameObject projectile = GameObject.Instantiate(bullet, rb.position, Quaternion.identity);
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            newBullet.GetComponent<Bullet>().dir = ((mousePos - rb.position).normalized) * moveSpeed;
+            projectile.GetComponent<Bullet>().dir = ((mousePos - rb.position).normalized) * moveSpeed;
+            projectile.layer = gameObject.layer;
+<<<<<<< Updated upstream
+
+            anim.SetBool("Shooting", true);
+            anim.SetFloat("ShootX", (mousePos - rb.position).x);
+            anim.SetFloat("ShootY", (mousePos - rb.position).y);
+        }
+        else
+        {
+            anim.SetBool("Shooting", false);
+=======
+>>>>>>> Stashed changes
         }
     }
 
@@ -41,4 +59,16 @@ public class Player : MonoBehaviour
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 
+<<<<<<< Updated upstream
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Health -= 5;
+    }
 }
+=======
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        Health -= 5;
+    }
+}
+>>>>>>> Stashed changes
