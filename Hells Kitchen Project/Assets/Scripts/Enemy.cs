@@ -34,13 +34,17 @@ public class Enemy : MonoBehaviour
         Fire();
     }
 
-    private void OnTriggerEnter2D(Collider2D collider) {
-        if(collider.tag == "Bullet") {
+    private void OnTriggerEnter2D(Collider2D other) {
+        if(other.tag == "Bullet") {
             totalDamage += bulletScript.damage;
             if(totalDamage == enemyHealth) {
                 LevelSystem.instance.AddXP(enemyEXP);
                 Destroy(gameObject);
             }
+        }
+
+        if(other.tag == "Player") {
+            player.Health -= 5;
         }
     }
 
@@ -50,7 +54,6 @@ public class Enemy : MonoBehaviour
             Vector2 myPos = new Vector2(weapon.position.x, weapon.position.y);
             GameObject projectile = Instantiate(bullet, myPos, Quaternion.identity);
             projectile.GetComponent<Bullet>().dir = (((Vector2)target.position - myPos).normalized) * shootingPower;
-            projectile.layer = gameObject.layer;
         }
     }
 }

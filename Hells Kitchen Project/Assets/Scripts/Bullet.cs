@@ -11,9 +11,6 @@ public class Bullet : MonoBehaviour
     public int damage = 1;
     private Player player;
 
-    private float stopwatch;
-    private float deathTime = 2f;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -22,25 +19,20 @@ public class Bullet : MonoBehaviour
         rb.velocity = dir;
     }
 
-    void FixedUpdate()
+    // Update is called once per frame
+    void Update()
     {
-        //Counts down until its death, so bullets don't stay forever
-        stopwatch += Time.fixedDeltaTime;
-
-<<<<<<< Updated upstream
-    private void OnTriggerEnter2D(Collider2D collider) {
-        if(collider.tag != "Bullet") {
-            Object.Destroy(this.gameObject);
-        }
-=======
-        if (stopwatch >= deathTime)
-        {
-            Object.Destroy(this.gameObject);
-        }
+        
     }
 
-    private void OnTriggerEnter2D(Collider2D collider) {
-        if(collider.tag != "Bullet") Object.Destroy(this.gameObject);
->>>>>>> Stashed changes
+    private void OnTriggerEnter2D(Collider2D other) {
+        if(other.tag == "Enemy") {
+            Object.Destroy(this.gameObject);
+        }
+
+        if(other.tag == "Player") {
+            player.Health -= 5;
+            Debug.Log("Hit");
+        }
     }
 }
