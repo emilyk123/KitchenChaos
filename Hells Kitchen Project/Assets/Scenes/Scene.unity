@@ -465,6 +465,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 844422672}
   m_CullTransparentMesh: 1
+--- !u!1 &1179487141 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5751259736102599777, guid: f1e298ba4b1604272966d923b54390fc, type: 3}
+  m_PrefabInstance: {fileID: 5751259736546505848}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1292540519 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 929658395698352313, guid: 01a413a0919184a91bc3ae2c7b970e26, type: 3}
@@ -628,6 +633,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5751259736102599782, guid: f1e298ba4b1604272966d923b54390fc, type: 3}
   m_PrefabInstance: {fileID: 5751259736546505848}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1790609443
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179487141}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 41294b30bf619c440bca2ed377677bdb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1852806289
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,6 +664,7 @@ GameObject:
   - component: {fileID: 1852806292}
   - component: {fileID: 1852806291}
   - component: {fileID: 1852806290}
+  - component: {fileID: 1852806293}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -712,6 +738,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1852806293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852806289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+<<<<<<< Updated upstream:Hells Kitchen Project/Assets/Scenes/Scene.unity
+  m_Script: {fileID: 11500000, guid: a7b0e8309bca2874f83f9a504830809d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1790609438}
+=======
+  m_Script: {fileID: 11500000, guid: e737235568c4aad41a39c7585aa38aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1790609438}
+  rotationSpeed: 50
+>>>>>>> Stashed changes:Hells Kitchen Project/Assets/Scene.unity
 --- !u!1 &1943793659
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,6 +940,10 @@ PrefabInstance:
     - target: {fileID: 5751259736102599778, guid: f1e298ba4b1604272966d923b54390fc, type: 3}
       propertyPath: moveSpeed
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5751259736102599781, guid: f1e298ba4b1604272966d923b54390fc, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5751259736102599782, guid: f1e298ba4b1604272966d923b54390fc, type: 3}
       propertyPath: m_RootOrder
