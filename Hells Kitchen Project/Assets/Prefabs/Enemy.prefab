@@ -149,12 +149,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 8101388167745781921, guid: a438bbbcc26980e46ae30c18530b16a5, type: 3}
   bulletScript: {fileID: 8101388167745781923, guid: a438bbbcc26980e46ae30c18530b16a5, type: 3}
-  target: {fileID: 5751259736102599782, guid: f1e298ba4b1604272966d923b54390fc, type: 3}
-  weapon: {fileID: 8392242207552598465, guid: 49493336b33a543fca9656cd062d7a0c, type: 3}
+  target: {fileID: 0}
+  weapon: {fileID: 929658395698352313}
   direction: {x: 0, y: 0}
   fireRate: 1
-  shootingPower: 20
+  shootingPower: 10
   shootingTime: 0
+  enemySpeed: 2
 --- !u!1001 &8687994194070413688
 PrefabInstance:
   m_ObjectHideFlags: 0

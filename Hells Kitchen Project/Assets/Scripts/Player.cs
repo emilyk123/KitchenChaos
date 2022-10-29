@@ -5,17 +5,11 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private Rigidbody2D rb;
-
     private Animator anim;
-
     public float moveSpeed = 5f;
-
     private Vector2 movement;
-
     public GameObject bullet;
-
     public Enemy enemy;
-
     public float Health = 100f;
 
     private void Awake()

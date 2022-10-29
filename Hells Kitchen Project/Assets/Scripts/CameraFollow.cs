@@ -11,8 +11,6 @@ public class CameraFollow : MonoBehaviour
     private void Update()
     {
         rotateDir = Input.GetAxisRaw("Rotate") * rotationSpeed;
-
-        Debug.Log(rotateDir);
     }
 
     private void FixedUpdate()
