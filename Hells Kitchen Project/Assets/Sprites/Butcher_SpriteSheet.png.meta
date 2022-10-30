@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 49327a4d2f3bca54abd7dff66973fef5
+guid: 9cde9d1a7fd0ec343a91c0b0b9ffb081
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Chef_SpriteSheet_0
+      name: Butcher_SpriteSheet_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 900
-        width: 76
-        height: 94
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb9ebaba1a58e3243bfd7953e7455e68
-      internalID: 1506202639
+      spriteID: fb7653e559fbc7148addc354f960f199
+      internalID: 1063118225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chef_SpriteSheet_1
+      name: Butcher_SpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 106
-        y: 900
-        width: 76
-        height: 94
+        x: 32
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 716702fe41ece314a86171ca50b6b5e5
-      internalID: 384941280
+      spriteID: 59f5b387b00d13f4f8e563bcd8c875c5
+      internalID: -542304716
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chef_SpriteSheet_2
+      name: Butcher_SpriteSheet_2
       rect:
         serializedVersion: 2
-        x: 200
-        y: 900
-        width: 75
-        height: 94
+        x: 64
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed87ef692b23ad34291f00a2ef9380c0
-      internalID: -484382848
+      spriteID: ee147708dc12cbe479760e5fbe2263c6
+      internalID: 1359330179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chef_SpriteSheet_3
+      name: Butcher_SpriteSheet_3
       rect:
         serializedVersion: 2
-        x: 293
-        y: 900
-        width: 76
-        height: 94
+        x: 96
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54077f17b151b8145941fd28f8f26302
-      internalID: 407656724
+      spriteID: 666b3577bc701ae4a9f5d6e3ae66d4ad
+      internalID: 915684373
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chef_SpriteSheet_4
+      name: Butcher_SpriteSheet_4
       rect:
         serializedVersion: 2
-        x: 6
-        y: 800
-        width: 88
-        height: 94
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 702c40cd099b8794c8e2dcfc97586a33
-      internalID: -215232482
+      spriteID: f045097393269a54b8d18e29fb7f7f1c
+      internalID: -446355878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chef_SpriteSheet_5
+      name: Butcher_SpriteSheet_5
       rect:
         serializedVersion: 2
-        x: 106
-        y: 800
-        width: 88
-        height: 94
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,20 +224,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a463c47f0b1b96a49a8354f1b2a909b3
-      internalID: 1512456364
+      spriteID: e6da4323a53da9749bbd505129b6a431
+      internalID: 1189303731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chef_SpriteSheet_6
+      name: Butcher_SpriteSheet_6
       rect:
         serializedVersion: 2
-        x: 206
-        y: 800
-        width: 69
-        height: 94
+        x: 64
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,20 +245,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d3f711f5866a5843b00d362d8d863f2
-      internalID: 1322523185
+      spriteID: 419401ff913864e4cb0b5e14b0c8346e
+      internalID: -546936310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chef_SpriteSheet_7
+      name: Butcher_SpriteSheet_7
       rect:
         serializedVersion: 2
-        x: 293
-        y: 800
-        width: 76
-        height: 94
+        x: 96
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,8 +266,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bd218e74f74c70408c7bf028e8ccea5
-      internalID: -330920909
+      spriteID: 81128b7eea2285c47bf465f5e42d9ec7
+      internalID: 1712158939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Butcher_SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 683494c6a0be55a47bac8e30a664e8f0
+      internalID: 118941581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Butcher_SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 257d9915fdcc7094086b042bb12cfdd2
+      internalID: 1096564774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Butcher_SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b14bba7de76604144ab8a631c9ab7435
+      internalID: 2016603753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Butcher_SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a142b64861a82418ce76dd01b3bb22
+      internalID: 30253372
       vertices: []
       indices: 
       edges: []
@@ -283,14 +367,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Chef_SpriteSheet_3: 407656724
-      Chef_SpriteSheet_1: 384941280
-      Chef_SpriteSheet_0: 1506202639
-      Chef_SpriteSheet_2: -484382848
-      Chef_SpriteSheet_6: 1322523185
-      Chef_SpriteSheet_7: -330920909
-      Chef_SpriteSheet_4: -215232482
-      Chef_SpriteSheet_5: 1512456364
+      Butcher_SpriteSheet_3: 915684373
+      Butcher_SpriteSheet_8: 118941581
+      Butcher_SpriteSheet_11: 30253372
+      Butcher_SpriteSheet_5: 1189303731
+      Butcher_SpriteSheet_0: 1063118225
+      Butcher_SpriteSheet_10: 2016603753
+      Butcher_SpriteSheet_6: -546936310
+      Butcher_SpriteSheet_7: 1712158939
+      Butcher_SpriteSheet_9: 1096564774
+      Butcher_SpriteSheet_1: -542304716
+      Butcher_SpriteSheet_2: 1359330179
+      Butcher_SpriteSheet_4: -446355878
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

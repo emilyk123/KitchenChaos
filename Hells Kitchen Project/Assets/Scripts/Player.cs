@@ -30,8 +30,11 @@ public class Player : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
-        anim.SetFloat("MoveX", movement.x);
-        anim.SetFloat("MoveY", movement.y);
+        if (movement != Vector2.zero)
+        {
+            anim.SetFloat("LookX", movement.x);
+            anim.SetFloat("LookY", movement.y);
+        }
 
         if (Input.GetButtonDown("Fire1"))
         {
@@ -40,13 +43,9 @@ public class Player : MonoBehaviour
             projectile.GetComponent<Bullet>().dir = ((mousePos - rb.position).normalized) * moveSpeed;
             projectile.layer = gameObject.layer;
 
-            anim.SetBool("Shooting", true);
+            anim.SetTrigger("Shoot");
             anim.SetFloat("ShootX", (mousePos - rb.position).x);
             anim.SetFloat("ShootY", (mousePos - rb.position).y);
-        }
-        else
-        {
-            anim.SetBool("Shooting", false);
         }
     }
 
