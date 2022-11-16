@@ -35,7 +35,7 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.tag != "Bullet")
+        if (collider.tag != "Bullet" && collider.tag != "Boundary")
         {
             Object.Destroy(this.gameObject);
         }
